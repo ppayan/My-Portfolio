@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<!--
+	Halcyonic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Canvas API Chatbot - Phillip Payan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Logo -->
+									<h1><a href="index.html" id="logo">Phillip Payan</a></h1>
+
+								<!-- Nav -->
+									<nav id="nav">
+										<a href="index.html">Home</a>
+										<a href="twocolumn1.html">Portfolio</a>
+										<a href="onecolumn.html">Featured Project</a>
+										<a href="JobfairResume.pdf" target="_blank">Resume</a>
+									</nav>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Content -->
+				<section id="content">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Main Content -->
+									<section>
+										<header>
+											<h2>Canvas Api Chatbot</h2>
+											<h3>A chatbot to navigate Canvas app.</h3>
+										</header>
+										<p style="text-align: center;">
+    										<strong>Team:</strong> Phillip Payan & Aidden Torres | <strong>Duration:</strong> Fall 2025 Semester | <strong>Course:</strong> CSCI 4250 (Human Centered Computing)
+										</p>
+										<header style="margin-top: 3em;">
+											<h2 style="color: #ce1b28;"> Motivation</h2>
+											<h3>Why we built this</h3>
+										</header>
+										<p>
+											Students spend significant time navigating Canvas's multi-level menu system 
+											to access basic information like upcoming assignments, current grades, and 
+											course announcements. A typical query requires clicking through 3-5 different 
+											pages and waiting for each to load. This inefficiency becomes particularly 
+											problematic when students need to quickly check information between classes 
+											or before deadlines.
+										</p>
+										<p>
+											<strong>Problem Statement:</strong> Canvas LMS requires multiple navigation 
+											steps for simple information queries, creating friction that wastes student time 
+											and increases the likelihood of missing important updates.
+										</p>
+										<p>
+											<strong>Target Users:</strong> College students who need quick, frequent access 
+											to Canvas information without the overhead of web browser navigation.
+										</p>
+										<p><strong>Project Goals:</strong></p>
+										<ul>
+											<li>Reduce Canvas navigation time by 70% through conversational queries</li>
+											<li>Enable instant access to assignments, grades, and announcements via natural language</li>
+											<li>Implement secure local storage of API tokens with encryption</li>
+											<li>Provide desktop notifications for upcoming deadlines and new announcements</li>
+										</ul>
+
+										<!-- ONLINE STUDY SECTION -->
+										<header style="margin-top: 3em;">
+											<h2 style="color: #ce1b28;">Online Study</h2>
+											<h3>Competitive Analysis & User Research</h3>
+										</header>
+										<p>
+											To understand user needs and identify pain points with existing solutions, we conducted 
+											a comprehensive competitive analysis of similar applications. We developed a Python-based 
+											web scraper to collect and analyze user reviews from both the Apple App Store and Google 
+											Play Store for five competing applications: Canvas Student, Google Classroom, Socratic 
+											by Google, Pi AI, and Notion. This automated approach allowed us to gather authentic 
+											user feedback at scale and identify common frustrations and desired features.
+										</p>
+
+										<p><strong>Research Methods:</strong></p>
+										<ul>
+											<li><strong>Automated Review Scraping:</strong> Developed Python scraper using iTunes RSS feeds and Google Play API to collect up to 100 reviews per app per platform (~[TOTAL NUMBER] reviews total)</li>
+											<li><strong>Sentiment Analysis:</strong> Implemented VADER sentiment analysis to classify reviews as positive, negative, or neutral</li>
+											<li><strong>Topic Modeling:</strong> Applied Latent Dirichlet Allocation (LDA) to identify recurring themes and topics across reviews</li>
+											<li><strong>Pain Point Analysis:</strong> Extracted and categorized user complaints from low-rated reviews (1-2 stars)</li>
+											<li><strong>Competitive Analysis:</strong> Compared features, ratings, and user satisfaction across LMS apps, chatbot apps, and productivity tools</li>
+										</ul>
+
+										<p><strong>Tools & Technologies Used:</strong></p>
+										<ul>
+											<li>Python (pandas, requests, google-play-scraper)</li>
+											<li>VADER Sentiment Analysis</li>
+											<li>scikit-learn (TF-IDF, LDA topic modeling)</li>
+											<li>NLTK (natural language processing)</li>
+											<li>Data visualization (matplotlib, wordcloud)</li>
+										</ul>
+
+										<p><strong>Key Findings:</strong></p>
+										<ul>
+											<li><strong>Navigation Complexity:</strong> 30.8% of negative reviews mentioned difficulty finding information within Canvas and similar LMS platforms, with users spending excessive time clicking through multiple menus</li>
+											<li><strong>Grade Access Frustration:</strong> Students frequently complained about the multi-step process to check grades, with 28% of reviews mentioning "confusing" or "hard to find" grade information</li>
+											<li><strong>Assignment Tracking Issues:</strong> 43% of users expressed frustration with keeping track of deadlines across multiple courses, citing poor notification systems and cluttered interfaces</li>
+											<li><strong>Positive Chatbot Reception:</strong> AI chatbot apps (Socratic, Pi) received 64.8% average positive sentiment scores, indicating user acceptance of conversational interfaces for information retrieval</li>
+											<li><strong>Quick Access Demand:</strong> Analysis of review keywords revealed strong demand for instant information access, with navigation complexity being the most frequently cited issue</li>
+										</ul>
+
+										<p><strong>Sentiment Analysis Results:</strong></p>
+										<ul>
+											<li>Overall sentiment distribution: 57.4% positive, 26.8% neutral, 15.8% negative (averaged across all apps)</li>
+											<li>Canvas Student: 2.79/5.0 average rating across platforms (53.7% positive sentiment)</li>
+											<li>Google Classroom: 2.21/5.0 average rating across platforms (34.8% positive sentiment)</li>
+											<li>Socratic by Google: 3.94/5.0 average rating (61.7% positive sentiment)</li>
+											<li>Pi AI: 3.06/5.0 average rating (67.9% positive sentiment)</li>
+											<li>Notion: 3.52/5.0 average rating (68.6% positive sentiment)</li>
+											<li>iOS vs Android: Android users reported 8.7% higher average satisfaction (3.26 vs 2.99 stars)</li>
+										</ul>
+
+										<p><strong>Identified Pain Points from 367 Negative Reviews:</strong></p>
+										<ul>
+											<li><strong>Missing Features:</strong> 43 mentions (11.7%) - requests for features like chatbot assistance, better text input, and improved assignment submission</li>
+											<li><strong>Sync Issues:</strong> 39 mentions (10.6%) - complaints about information not updating in real-time, app crashes after iOS updates</li>
+											<li><strong>Slow Performance:</strong> 32 mentions (8.7%) - lag, crashes, or slow loading times</li>
+											<li><strong>Complex Navigation:</strong> 30 mentions (8.2%) - confusing layouts or difficulty locating features</li>
+											<li><strong>Login Problems:</strong> 7 mentions (1.9%) - authentication difficulties and "item not available offline" errors</li>
+										</ul>
+
+										<p><strong>Topic Modeling Insights:</strong></p>
+										<p>LDA analysis revealed five main topic clusters across all reviews:</p>
+										<ul>
+											<li><strong>Topic 1:</strong> Assignment management and deadline tracking</li>
+											<li><strong>Topic 2:</strong> Grade checking and GPA calculations</li>
+											<li><strong>Topic 3:</strong> Navigation and user interface design</li>
+											<li><strong>Topic 4:</strong> Notifications and reminders</li>
+											<li><strong>Topic 5:</strong> Cross-platform sync and accessibility</li>
+										</ul>
+
+										<p style="margin-top: 2em;"><em>Research visualizations:</em></p>
+										<p style="text-align: center;">
+											<img src="images/app_analysis_visualizations.png" alt="Review Analysis Charts" style="max-width: 100%; margin: 1em 0;" />
+											<br><em>Rating distribution, sentiment analysis, and platform comparison</em>
+										</p>
+										<p style="text-align: center;">
+											<img src="images/topic_wordcloud.png" alt="Topic Word Cloud" style="max-width: 80%; margin: 1em 0;" />
+											<br><em>Common themes from LDA topic modeling</em>
+										</p>
+
+										<p><strong>Design Implications:</strong></p>
+										<p>Based on this analysis, we identified the following requirements for our Canvas chatbot:</p>
+										<ul>
+											<li>Conversational natural language interface to eliminate menu navigation</li>
+											<li>Instant grade and assignment access through simple queries</li>
+											<li>Proactive notifications and reminders for upcoming deadlines</li>
+											<li>Cross-platform desktop application for better performance than web-based solutions</li>
+											<li>Secure local API token storage to address authentication concerns</li>
+										</ul>
+
+										<!-- PROTOTYPING PHASE SECTION -->
+										<header style="margin-top: 3em;">
+											<h2 style="color: #ce1b28;">Prototyping Phase</h2>
+											<h3>Design & Iteration</h3>
+										</header>
+										<p>[Project in progress - Prototyping phase documentation will be added here including low, mid, and high-fidelity designs, tools used, and key design decisions.]</p>
+
+										<!-- USER STUDY 1 RESULTS SECTION -->
+										<header style="margin-top: 3em;">
+											<h2 style="color: #ce1b28;">User Study 1 Results</h2>
+											<h3>Initial Usability Testing</h3>
+										</header>
+										<p>[Project in progress - First user study results will be documented here including participant details, quantitative metrics, qualitative findings, and changes made based on feedback.]</p>
+
+										<!-- USER STUDY 2 RESULTS SECTION -->
+										<header style="margin-top: 3em;">
+											<h2 style="color: #ce1b28;">User Study 2 Results</h2>
+											<h3>Final Validation Testing</h3>
+										</header>
+										<p>[Project in progress - Second user study results and improvements over Study 1 will be documented here.]</p>
+
+										<!-- FINAL IMPLEMENTATION SECTION -->
+										<header style="margin-top: 3em;">
+											<h2 style="color: #ce1b28;">Final Implementation</h2>
+											<h3>The Working Application</h3>
+										</header>
+										<p>
+											The Canvas Assistant Chatbot will be built using Python and Rasa NLP framework with 
+											Canvas API integration. Final implementation details, feature demonstrations, and 
+											live demo links will be added upon project completion.
+										</p>
+										<p><strong>Planned Technologies:</strong> Python, Rasa NLP, Canvas API, PyQt/Tkinter, Keyring (encryption)</p>
+
+										<!-- REFLECTIONS & LEARNINGS SECTION -->
+										<header style="margin-top: 3em;">
+											<h2 style="color: #ce1b28;">Reflections & Learnings</h2>
+											<h3>What we learned from this project</h3>
+										</header>
+										<p>[Project in progress - Reflections, successes, challenges, key takeaways, and future improvements will be documented upon project completion.]</p>
+
+
+										<!-- THE TEAM SECTION -->
+										<header style="margin-top: 3em;">
+											<h2 style="color: #ce1b28;"> The Team</h2>
+										</header>
+										<p style="text-align: center;">
+											<strong>Phillip Payan</strong> - Developer<br>
+											<strong>Aidden Torres</strong> - Developer<br>
+										</p>
+
+										<!-- Navigation back -->
+										<p style="text-align: center; margin-top: 3em;">
+											<a href="twocolumn1.html" class="button">← Back to Portfolio</a>
+											<a href="index.html" class="button">Home</a>
+										</p>
+
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-8 col-12-medium">
+
+								<!-- Links -->
+									<section>
+										<h2>Quick Links</h2>
+										<div>
+											<div class="row">
+												<div class="col-6 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="index.html">Home</a></li>
+														<li><a href="twocolumn1.html">Portfolio</a></li>
+														<li><a href="onecolumn.html">Featured Project</a></li>
+														<li><a href="JobfairResume.pdf" target="_blank">Resume</a></li>
+													</ul>
+												</div>
+												<div class="col-6 col-12-small">
+													<ul class="link-list last-child">
+														<li><a href="mailto:phillip.payan@hotmail.com">Email Me</a></li>
+														<li><a href="https://www.linkedin.com/in/phillip-payan-0aa45b213/" target="_blank">LinkedIn</a></li>
+														<li><a href="https://github.com/ppayan" target="_blank">GitHub</a></li>
+														<li><a href="mailto:phillip.payan@hotmail.com">Contact</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</section>
+
+							</div>
+							<div class="col-4 col-12-medium imp-medium">
+
+								<!-- Blurb -->
+									<section>
+										<h2>Questions About This Project?</h2>
+										<p>
+											I'd be happy to discuss this project in more detail, share additional insights, 
+											or talk about the process. Feel free to reach out!
+										</p>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					&copy; Untitled. All rights reserved. | Design: <a href="http://html5up.net">HTML5 UP</a>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
