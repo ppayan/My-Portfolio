@@ -45,14 +45,15 @@
 								<!-- Main Content -->
 									<section>
 										<header>
-											<h2>Canvas Api Chatbot</h2>
-											<h3>A chatbot to navigate Canvas app.</h3>
+											<h2>Canvas API Chatbot</h2>
+											<h3>A Desktop Application to Streamline Canvas LMS Navigation</h3>
 										</header>
 										<p style="text-align: center;">
     										<strong>Team:</strong> Phillip Payan & Aidden Torres | <strong>Duration:</strong> Fall 2025 Semester | <strong>Course:</strong> CSCI 4250 (Human Centered Computing)
 										</p>
+
 										<header style="margin-top: 3em;">
-											<h2 style="color: #ce1b28;"> Motivation</h2>
+											<h2 style="color: #ce1b28;">Motivation</h2>
 											<h3>Why we built this</h3>
 										</header>
 										<p>
@@ -96,59 +97,19 @@
 
 										<p><strong>Research Methods:</strong></p>
 										<ul>
-											<li><strong>Automated Review Scraping:</strong> Developed Python scraper using iTunes RSS feeds and Google Play API to collect up to 100 reviews per app per platform (~[TOTAL NUMBER] reviews total)</li>
+											<li><strong>Automated Review Scraping:</strong> Developed Python scraper using iTunes RSS feeds and Google Play API to collect up to 100 reviews per app per platform</li>
 											<li><strong>Sentiment Analysis:</strong> Implemented VADER sentiment analysis to classify reviews as positive, negative, or neutral</li>
 											<li><strong>Topic Modeling:</strong> Applied Latent Dirichlet Allocation (LDA) to identify recurring themes and topics across reviews</li>
 											<li><strong>Pain Point Analysis:</strong> Extracted and categorized user complaints from low-rated reviews (1-2 stars)</li>
 											<li><strong>Competitive Analysis:</strong> Compared features, ratings, and user satisfaction across LMS apps, chatbot apps, and productivity tools</li>
 										</ul>
 
-										<p><strong>Tools & Technologies Used:</strong></p>
-										<ul>
-											<li>Python (pandas, requests, google-play-scraper)</li>
-											<li>VADER Sentiment Analysis</li>
-											<li>scikit-learn (TF-IDF, LDA topic modeling)</li>
-											<li>NLTK (natural language processing)</li>
-											<li>Data visualization (matplotlib, wordcloud)</li>
-										</ul>
-
 										<p><strong>Key Findings:</strong></p>
 										<ul>
-											<li><strong>Navigation Complexity:</strong> 30.8% of negative reviews mentioned difficulty finding information within Canvas and similar LMS platforms, with users spending excessive time clicking through multiple menus</li>
-											<li><strong>Grade Access Frustration:</strong> Students frequently complained about the multi-step process to check grades, with 28% of reviews mentioning "confusing" or "hard to find" grade information</li>
-											<li><strong>Assignment Tracking Issues:</strong> 43% of users expressed frustration with keeping track of deadlines across multiple courses, citing poor notification systems and cluttered interfaces</li>
-											<li><strong>Positive Chatbot Reception:</strong> AI chatbot apps (Socratic, Pi) received 64.8% average positive sentiment scores, indicating user acceptance of conversational interfaces for information retrieval</li>
-											<li><strong>Quick Access Demand:</strong> Analysis of review keywords revealed strong demand for instant information access, with navigation complexity being the most frequently cited issue</li>
-										</ul>
-
-										<p><strong>Sentiment Analysis Results:</strong></p>
-										<ul>
-											<li>Overall sentiment distribution: 57.4% positive, 26.8% neutral, 15.8% negative (averaged across all apps)</li>
-											<li>Canvas Student: 2.79/5.0 average rating across platforms (53.7% positive sentiment)</li>
-											<li>Google Classroom: 2.21/5.0 average rating across platforms (34.8% positive sentiment)</li>
-											<li>Socratic by Google: 3.94/5.0 average rating (61.7% positive sentiment)</li>
-											<li>Pi AI: 3.06/5.0 average rating (67.9% positive sentiment)</li>
-											<li>Notion: 3.52/5.0 average rating (68.6% positive sentiment)</li>
-											<li>iOS vs Android: Android users reported 8.7% higher average satisfaction (3.26 vs 2.99 stars)</li>
-										</ul>
-
-										<p><strong>Identified Pain Points from 367 Negative Reviews:</strong></p>
-										<ul>
-											<li><strong>Missing Features:</strong> 43 mentions (11.7%) - requests for features like chatbot assistance, better text input, and improved assignment submission</li>
-											<li><strong>Sync Issues:</strong> 39 mentions (10.6%) - complaints about information not updating in real-time, app crashes after iOS updates</li>
-											<li><strong>Slow Performance:</strong> 32 mentions (8.7%) - lag, crashes, or slow loading times</li>
-											<li><strong>Complex Navigation:</strong> 30 mentions (8.2%) - confusing layouts or difficulty locating features</li>
-											<li><strong>Login Problems:</strong> 7 mentions (1.9%) - authentication difficulties and "item not available offline" errors</li>
-										</ul>
-
-										<p><strong>Topic Modeling Insights:</strong></p>
-										<p>LDA analysis revealed five main topic clusters across all reviews:</p>
-										<ul>
-											<li><strong>Topic 1:</strong> Assignment management and deadline tracking</li>
-											<li><strong>Topic 2:</strong> Grade checking and GPA calculations</li>
-											<li><strong>Topic 3:</strong> Navigation and user interface design</li>
-											<li><strong>Topic 4:</strong> Notifications and reminders</li>
-											<li><strong>Topic 5:</strong> Cross-platform sync and accessibility</li>
+											<li><strong>Navigation Complexity:</strong> 30.8% of negative reviews mentioned difficulty finding information within Canvas and similar LMS platforms</li>
+											<li><strong>Grade Access Frustration:</strong> 28% of reviews mentioned "confusing" or "hard to find" grade information</li>
+											<li><strong>Assignment Tracking Issues:</strong> 43% of users expressed frustration with keeping track of deadlines across multiple courses</li>
+											<li><strong>Positive Chatbot Reception:</strong> AI chatbot apps received 64.8% average positive sentiment scores</li>
 										</ul>
 
 										<p style="margin-top: 2em;"><em>Research visualizations:</em></p>
@@ -162,7 +123,6 @@
 										</p>
 
 										<p><strong>Design Implications:</strong></p>
-										<p>Based on this analysis, we identified the following requirements for our Canvas chatbot:</p>
 										<ul>
 											<li>Conversational natural language interface to eliminate menu navigation</li>
 											<li>Instant grade and assignment access through simple queries</li>
@@ -176,53 +136,187 @@
 											<h2 style="color: #ce1b28;">Prototyping Phase</h2>
 											<h3>Design & Iteration</h3>
 										</header>
-										<p>[Project in progress - Prototyping phase documentation will be added here including low, mid, and high-fidelity designs, tools used, and key design decisions.]</p>
+										
+										<p>
+											We developed two low-fidelity prototypes using <strong>Figma</strong> to explore different approaches to Canvas information access.
+										</p>
+
+										<p><strong>Prototype 1: Chat-Based Interface</strong></p>
+										<p>
+											A minimalist design centered entirely around conversational interaction. Users type 
+											natural language queries to access all Canvas information without any visual dashboard elements.
+										</p>
+
+										<!-- PROTOTYPE 1 SCREENSHOTS - ADD YOUR IMAGES HERE -->
+										<div style="text-align: center; margin: 2em 0;">
+											<img src="images/chat_based_prototype.png" alt="Prototype 1 - Chat-Based Interface" style="max-width: 100%; border: 1px solid #ddd;" />
+											<p><em>Prototype 1: Chat-Based Interface</em></p>
+										</div>
+
+										<p><strong>Prototype 2: Dashboard + Chat Hybrid</strong></p>
+										<p>
+											A comprehensive interface combining visual information display with optional chatbot 
+											assistance. The dashboard shows key information at a glance while providing a sidebar chatbot for natural language queries.
+										</p>
+
+										<!-- PROTOTYPE 2 SCREENSHOTS  -->
+										<div style="text-align: center; margin: 2em 0;">
+											<img src="images/hybrid_based_prototype.png" alt="Prototype 2 - Dashboard + Chat Hybrid" style="max-width: 100%; border: 1px solid #ddd;" />
+											<p><em>Prototype 2: Dashboard + Chat Hybrid</em></p>
+										</div>
 
 										<!-- USER STUDY 1 RESULTS SECTION -->
 										<header style="margin-top: 3em;">
 											<h2 style="color: #ce1b28;">User Study 1 Results</h2>
-											<h3>Initial Usability Testing</h3>
+											<h3>Low-Fidelity Prototype Evaluation</h3>
 										</header>
-										<p>[Project in progress - First user study results will be documented here including participant details, quantitative metrics, qualitative findings, and changes made based on feedback.]</p>
+
+										<p><strong>Study Overview:</strong> 9 college students, in-person one-on-one sessions with think-aloud protocol</p>
+
+										<p><strong>Key Findings:</strong></p>
+										<ul>
+											<li>Participants were divided between both designs - some preferred chat simplicity, others preferred visual dashboard scanning</li>
+											<li>Dashboard design reduced cognitive burden of remembering what questions to ask</li>
+											<li>Reminder and assignment features were universally appreciated</li>
+											<li>Multiple participants stated that duplicating full Canvas features was unnecessary</li>
+											<li>Users requested: calendar view, syllabus viewer, grade calculator, announcements display</li>
+										</ul>
+
+										<p><strong>Design Decision: Dashboard + Chat Hybrid (Prototype 2)</strong></p>
+										<p><strong>Why:</strong> Supports fast visual access without requiring users to formulate queries, reduces mental burden, still allows conversational assistance when needed. Most participants felt it was more organized and intuitive.</p>
 
 										<!-- USER STUDY 2 RESULTS SECTION -->
 										<header style="margin-top: 3em;">
 											<h2 style="color: #ce1b28;">User Study 2 Results</h2>
-											<h3>Final Validation Testing</h3>
+											<h3>Functional Prototype Evaluation</h3>
 										</header>
-										<p>[Project in progress - Second user study results and improvements over Study 1 will be documented here.]</p>
+
+										<p><strong>Study Overview:</strong> 6 college students testing the functional Python application with live Canvas data</p>
+
+										<!-- USER STUDY 2 VIDEO - Functional Prototype Being Tested -->
+										<div style="text-align: center; margin: 2em 0;">
+											<video width="800" height="450" controls style="max-width: 100%;">
+												<source src="images/userStudy2.mov" type="video/quicktime">
+												<source src="images/userStudy2.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>
+											<p><em>Functional Prototype During User Study 2</em></p>
+										</div>
+
+										<p><strong>What Went Right:</strong></p>
+										<ul>
+											<li>Dashboard organization praised as "organized," "clean," and "fast to scan"</li>
+											<li>Users found the system faster than Canvas, especially for checking due dates</li>
+											<li>Chatbot handled shorthand and misspellings effectively</li>
+											<li>Most users completed all tasks without needing assistance</li>
+											<li>Reminder creation worked as expected</li>
+										</ul>
+
+										<p><strong>Issues Identified:</strong></p>
+										<ul>
+											<li>Reminder deletion labels were unclear</li>
+											<li>Course navigation required too much scrolling - users wanted a "View All Courses" page</li>
+											<li>Chatbot's open-ended phrasing prompted unrealistic queries outside its scope</li>
+											<li>Users requested messaging panel and course filtering options</li>
+										</ul>
+
+										<p><strong>Would They Use It Regularly?</strong></p>
+										<p>100% of participants said YES, with conditions: reliability must remain consistent, additional messaging features would increase value, clearer feature descriptions needed.</p>
 
 										<!-- FINAL IMPLEMENTATION SECTION -->
 										<header style="margin-top: 3em;">
 											<h2 style="color: #ce1b28;">Final Implementation</h2>
 											<h3>The Working Application</h3>
 										</header>
-										<p>
-											The Canvas Assistant Chatbot will be built using Python and Rasa NLP framework with 
-											Canvas API integration. Final implementation details, feature demonstrations, and 
-											live demo links will be added upon project completion.
+
+										<p style="text-align: center; margin: 1em 0;">
+											<a href="https://github.com/ppayan/Canvas_Api_Chatbot" target="_blank" class="button">View on GitHub</a>
 										</p>
-										<p><strong>Planned Technologies:</strong> Python, Rasa NLP, Canvas API, PyQt/Tkinter, Keyring (encryption)</p>
+
+										<!-- FINAL PRODUCT VIDEO  -->
+										<div style="text-align: center; margin: 2em 0;">
+											<video width="800" height="450" controls style="max-width: 100%;">
+												<source src="images/fullDemo.mov" type="video/quicktime">
+												<source src="images/fullDemo.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>
+											<p><em>Full Application Demo</em></p>
+										</div>
+
+										<p>
+											The Canvas LMS Desktop Application is a fully functional Python-based tool built with 
+											<strong>tkinter</strong> for the GUI and integrated with the <strong>Canvas API</strong>. 
+											The application provides students with a streamlined interface for managing coursework.
+										</p>
+
+										<p><strong>Core Features:</strong></p>
+										<ul>
+											<li><strong>Dashboard:</strong> Upcoming assignments, current grades, active reminders, last sync timestamp</li>
+											<li><strong>Assignment Management:</strong> View all unsubmitted assignments organized by course with due date tracking</li>
+											<li><strong>Grade Tracking:</strong> Current grades with expandable detailed breakdowns per course</li>
+											<li><strong>Reminder System:</strong> Calendar-based date selection with desktop notifications (macOS)</li>
+											<li><strong>Chatbot:</strong> Natural language queries like "What's due this week?" or "What's my grade in Biology?"</li>
+										</ul>
+
+										<p><strong>Technology Stack:</strong> Python 3.11+, tkinter, Canvas REST API, tkcalendar, requests, terminal-notifier (macOS notifications)</p>
+
+										<p><strong>Key Architecture:</strong></p>
+										<ul>
+											<li><strong>Gui_app.py</strong> - Main GUI application</li>
+											<li><strong>Canvas_api.py</strong> - Canvas API wrapper & authentication</li>
+											<li><strong>chatbot.py</strong> - Natural language processing engine</li>
+											<li><strong>utils.py</strong> - Notification handler with threading</li>
+										</ul>
+
+										<p><strong>Privacy & Security:</strong> All data stored locally on user's machine. Users provide their own Canvas API tokens for direct connection. No cloud storage or external data transmission.</p>
 
 										<!-- REFLECTIONS & LEARNINGS SECTION -->
 										<header style="margin-top: 3em;">
 											<h2 style="color: #ce1b28;">Reflections & Learnings</h2>
 											<h3>What we learned from this project</h3>
 										</header>
-										<p>[Project in progress - Reflections, successes, challenges, key takeaways, and future improvements will be documented upon project completion.]</p>
 
+										<p><strong>Key Successes:</strong></p>
+										<ul>
+											<li><strong>User Research Drove Decisions:</strong> Starting with competitive analysis of 500+ reviews prevented building unwanted features</li>
+											<li><strong>Iterative Testing Validated Approach:</strong> Two user studies at different fidelity levels allowed early course-correction</li>
+											<li><strong>Simplicity Over Features:</strong> Students wanted fast shortcuts to common tasks, not a Canvas replacement</li>
+											<li><strong>Natural Language Added Value:</strong> Chatbot's ability to handle shorthand like "what's due tmrw" received consistent praise</li>
+										</ul>
+
+										<p><strong>Challenges Faced:</strong></p>
+										<ul>
+											<li><strong>Scope vs. Expectations:</strong> Balancing what users wanted (messaging, announcements) with semester timeline constraints</li>
+											<li><strong>API Token Management:</strong> Security requirement added friction to first-time setup</li>
+											<li><strong>Cross-Platform Notifications:</strong> Terminal-notifier works on macOS but not Windows/Linux</li>
+											<li><strong>Chatbot Expectations:</strong> Open-ended interface led users to expect broader functionality than Canvas-specific queries</li>
+										</ul>
+
+										<p><strong>HCI Principles Applied:</strong></p>
+										<ul>
+											<li>User-Centered Design - every decision from user feedback, not assumptions</li>
+											<li>Iterative Development - multiple prototype → test → refine cycles</li>
+											<li>Cognitive Load Reduction - dashboard displays information proactively</li>
+											<li>Recognition Over Recall - visual elements reduced need to remember queries</li>
+										</ul>
+
+										<p><strong>Impact:</strong> 100% adoption intent from User Study 2, all participants agreed system felt faster than Canvas, validated our user-centered approach.</p>
 
 										<!-- THE TEAM SECTION -->
 										<header style="margin-top: 3em;">
-											<h2 style="color: #ce1b28;"> The Team</h2>
+											<h2 style="color: #ce1b28;">The Team</h2>
 										</header>
 										<p style="text-align: center;">
-											<strong>Phillip Payan</strong> - Developer<br>
+											<strong>Phillip Payan</strong> - UX Researcher & Lead Developer<br>
 											<strong>Aidden Torres</strong> - Developer<br>
+											<br>
+											<em>Fall 2025 | CSCI 4250 - Human Centered Computing</em><br>
+											<em>New Mexico State University</em>
 										</p>
 
 										<!-- Navigation back -->
 										<p style="text-align: center; margin-top: 3em;">
+											<a href="https://github.com/ppayan/Canvas_Api_Chatbot" target="_blank" class="button">View on GitHub</a>
 											<a href="twocolumn1.html" class="button">← Back to Portfolio</a>
 											<a href="index.html" class="button">Home</a>
 										</p>
@@ -255,10 +349,10 @@
 												</div>
 												<div class="col-6 col-12-small">
 													<ul class="link-list last-child">
-														<li><a href="mailto:phillip.payan@hotmail.com">Email Me</a></li>
+														<li><a href="/cdn-cgi/l/email-protection#44342c2d28282d346a34253d252a042c2b3029252d286a272b29">Email Me</a></li>
 														<li><a href="https://www.linkedin.com/in/phillip-payan-0aa45b213/" target="_blank">LinkedIn</a></li>
 														<li><a href="https://github.com/ppayan" target="_blank">GitHub</a></li>
-														<li><a href="mailto:phillip.payan@hotmail.com">Contact</a></li>
+														<li><a href="/cdn-cgi/l/email-protection#94e4fcfdf8f8fde4bae4f5edf5fad4fcfbe0f9f5fdf8baf7fbf9">Contact</a></li>
 													</ul>
 												</div>
 											</div>
@@ -290,11 +384,5 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+			<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
+			<script s
